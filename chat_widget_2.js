@@ -82,6 +82,8 @@
     chatMessages.className = 'chat-messages';
     chatContainer.appendChild(chatMessages);
 
+    document.body.appendChild(widgetContainer);
+
     function enhanceLinks(container) {
         const links = container.querySelectorAll('a');
         links.forEach(link => {
@@ -143,6 +145,5 @@
     }
 
     // Example usage
-    document.body.appendChild(widgetContainer);
     sendMessage("Hello! What water filters do you recommend?");
 })();
