@@ -461,7 +461,7 @@
             
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
-            botMessageDiv.innerHTML = Array.isArray(data) ? data[0].output : data.output;
+            botMessageDiv.innerHTML = data.message?.content || 'No response.';
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } catch (error) {
