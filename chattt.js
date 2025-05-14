@@ -458,12 +458,11 @@
             });
             
             const data = await response.json();
+            console.log('Webhook response:', data);
             
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
-            botMessageDiv.innerHTML = data.message && data.message.content
-                ? data.message.content
-                : 'No response.';
+            botMessageDiv.innerHTML = data?.message?.content || 'No response.';
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } catch (error) {
