@@ -271,6 +271,22 @@
         .n8n-chat-widget .chat-footer a:hover {
             opacity: 1;
         }
+
+        .n8n-chat-widget .chat-message.bot a {
+            color: var(--chat--color-primary); /* or any hex/code you'd like */
+            text-decoration: underline;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .n8n-chat-widget .chat-message.bot a:hover {
+            color: var(--chat--color-secondary);
+            text-decoration: none;
+        }
+
+        .n8n-chat-widget .chat-message.bot a:visited {
+            color: #6b3fd4; /* optional: secondary shade */
+        }
     `;
 
     // Load Poppins font
