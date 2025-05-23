@@ -313,8 +313,8 @@
             welcomeText: '',
             responseTimeText: '',
             poweredBy: {
-                text: 'Created by IAVAI',
-                link: 'iav.ai'
+                text: 'Created by EvolveHI.ai',
+                link: 'EvolveHI.ai'
             }
         },
         style: {
